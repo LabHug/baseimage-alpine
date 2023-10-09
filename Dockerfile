@@ -10,4 +10,4 @@ RUN echo "--- create labhug user ---" && \
     tini && \
     mkdir -p /app /config
 
-ENTRYPOINT ["/sbin/tini" , "--"]
+ENTRYPOINT ["/sbin/tini" , "--", "sh", "/init.sh"]
